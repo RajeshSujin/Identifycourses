@@ -41,7 +41,7 @@ public class Baseclass
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setPlatform(Platform.WIN11);
 		capabilities.setBrowserName("MicrosoftEdge");
-		driver = new RemoteWebDriver(new URL("http://192.168.138.4:4444"), capabilities);
+		driver = new RemoteWebDriver(new URL("http://192.168.57.4:4444"), capabilities);
 		driver.manage().deleteAllCookies();
 		driver.get("https://www.coursera.org/");
 		//Thread.sleep(20000);
