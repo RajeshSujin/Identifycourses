@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Utilities.ExtentReportUtility"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <parameter name="os" value="Windows"/>
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="smoke"/>
+        <include name="regression"/>
+        <include name="master"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Identify_courses.languagelearning">
+        <methods>
+          <include name="courseraHome"/>
+          <include name="showmore"/>
+          <include name="launchBrowser"/>
+          <include name="closebrowser"/>
+        </methods>
+      </class> <!-- Identify_courses.languagelearning -->
+      <class name="Identify_courses.Enterprise">
+        <methods>
+          <include name="Enterprises"/>
+          <include name="launchBrowser"/>
+          <include name="textboxes"/>
+          <include name="closebrowser"/>
+          <include name="filltheform"/>
+        </methods>
+      </class> <!-- Identify_courses.Enterprise -->
+      <class name="Identify_courses.Webdevelopment">
+        <methods>
+          <include name="selectlanguage"/>
+          <include name="search"/>
+          <include name="launchBrowser"/>
+          <include name="course01"/>
+          <include name="closebrowser"/>
+          <include name="level"/>
+          <include name="language"/>
+          <include name="course02"/>
+        </methods>
+      </class> <!-- Identify_courses.Webdevelopment -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
