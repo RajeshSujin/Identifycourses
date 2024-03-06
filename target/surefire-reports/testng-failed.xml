@@ -23,15 +23,6 @@
           <include name="closebrowser"/>
         </methods>
       </class> <!-- Identify_courses.languagelearning -->
-      <class name="Identify_courses.Enterprise">
-        <methods>
-          <include name="Enterprises"/>
-          <include name="launchBrowser"/>
-          <include name="textboxes"/>
-          <include name="closebrowser"/>
-          <include name="filltheform"/>
-        </methods>
-      </class> <!-- Identify_courses.Enterprise -->
       <class name="Identify_courses.Webdevelopment">
         <methods>
           <include name="selectlanguage"/>
@@ -44,6 +35,15 @@
           <include name="course02"/>
         </methods>
       </class> <!-- Identify_courses.Webdevelopment -->
+      <class name="Identify_courses.Enterprise">
+        <methods>
+          <include name="Enterprises"/>
+          <include name="launchBrowser"/>
+          <include name="textboxes"/>
+          <include name="closebrowser"/>
+          <include name="filltheform"/>
+        </methods>
+      </class> <!-- Identify_courses.Enterprise -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
